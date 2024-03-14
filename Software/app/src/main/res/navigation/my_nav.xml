@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="hr.foi.rampu.booklyapprampu.fragments.loginAndRegister.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/action_loginFragment_to_homeScreenActivity"
+            app:destination="@id/homeScreenActivity"/>
+        <action
+            android:id="@+id/action_loginFragment_to_homeScreenActivity2"
+            app:destination="@id/homeScreenActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="hr.foi.rampu.booklyapprampu.fragments.loginAndRegister.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <activity
+        android:id="@+id/homeScreenActivity"
+        android:name="hr.foi.rampu.booklyapprampu.activities.HomeScreenActivity"
+        android:label="HomeScreenActivity" >
+    </activity>
+
+</navigation>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:title="Moje knjige" />
+
+    <item
+        android:id="@+id/nav_aktualno"
+        android:icon="@drawable/vector_actual"
+        android:title="Aktualno" />
+    <item
+        android:id="@+id/nav_procitao"
+        android:icon="@drawable/vactor_read"
+        android:title="Pročitano" />
+    <item
+        android:id="@+id/nav_preporuceno"
+        android:icon="@drawable/vector_recommended"
+        android:title="Preporučeno" />
+
+    <group>
+        <item
+            android:title="">
+            <menu>
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/vector_logout"
+                    android:title="Odjava"/>
+            </menu>
+        </item>
+    </group>
+
+</menu>

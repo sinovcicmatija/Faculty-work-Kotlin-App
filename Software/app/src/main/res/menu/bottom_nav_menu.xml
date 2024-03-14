@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/catalog"
+        android:title="Katalog"
+        android:icon="@drawable/ic_catalog"/>
+
+    <item android:id="@+id/news"
+        android:title="Novosti"
+        android:icon="@drawable/baseline_newspaper_24"/>
+
+    <item android:id="@+id/waiting_list"
+        android:title="Lista čekanja"
+        android:icon="@drawable/ic_waiting_list"/>
+</menu>

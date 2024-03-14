@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/fragment_waiting_list.xml -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:textSize="20sp"
+        android:text="Tvoja lista čekanja"
+        android:layout_gravity="center_horizontal"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewWaitingList"
+        android:layout_width="match_parent"
+        android:layout_height="560dp"
+        android:layout_marginTop="100dp"
+        android:padding="16dp" />
+
+</FrameLayout>

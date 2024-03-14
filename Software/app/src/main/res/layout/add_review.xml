@@ -1,0 +1,35 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/popup_background">
+
+
+    <RatingBar
+        android:id="@+id/ratingBarAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:layout_gravity="center_horizontal"/>
+    <EditText
+        android:id="@+id/Comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Unesite svoj komentar"
+        android:inputType="textMultiLine"
+        android:gravity="top"
+        android:minLines="3"
+        android:maxLines="5"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnSubmitReview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Predaj recenziju"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
